@@ -9,78 +9,112 @@ if code == "Yes":
     code2 = input ("Was ist das Passwort")
     if code2 == "899#lol#Hack_90":
         def button_click():
-            # Schalte das Laden-Rechteck ein
-            loading_label.place(x=10, y=10)
-            root.update()  # Aktualisiere das Fenster, um die Änderungen sofort anzuzeigen
-            time.sleep(5)  # Warte für 5 Sekunden
-            # Schalte das Laden-Rechteck aus
-            loading_label.place_forget()
+    # Schalte das Laden-Rechteck ein
+    loading_label.place(x=10, y=10)
+    root.update()  # Aktualisiere das Fenster, um die Änderungen sofort anzuzeigen
+    time.sleep(5)  # Warte für 5 Sekunden
+    # Schalte das Laden-Rechteck aus
+    loading_label.place_forget()
+    # Erstelle die Leiste nach dem Laden-Bildschirm
+    create_toolbar(root)
 
+# Funktion zum Erstellen der Leiste
+def create_toolbar(parent):
+    toolbar = tk.Frame(parent, bg="lightgray", height=parent.winfo_reqheight()/13)
+    toolbar.pack(side="top", fill="x")
 
-        root = tk.Tk()
-        root.title("Battlenight modpack Zwacktus")
+    # Elemente der Leiste
+    toolbar_elements = ["Battlepass", "Start", "Shop", "Spin", "Battlebucks", "Spind", "Trophäen", "Turnier", "Username"]
+    for element_text in toolbar_elements:
+        element = tk.Label(toolbar, text=element_text, padx=10, pady=5)
+        element.pack(side="left")
 
-        label = tk.Label(root, text="Willkommwn im Spiel")
-        label.pack(pady=10)
+root = tk.Tk()
+root.title("Mein GUI")
 
-        button = tk.Button(root, text="Spiel starten", command=button_click)
-        button.pack()
+label = tk.Label(root, text="Hallo, das ist mein GUI!")
+label.pack(pady=10)
 
-        # Erstellen eines Labels für "Loading"
-        loading_label = tk.Label(root, text="Loading", bg="blue", fg="white")
+button = tk.Button(root, text="Klick mich!", command=button_click)
+button.pack()
 
-        root.mainloop()
+# Erstellen eines Labels für "Loading"
+loading_label = tk.Label(root, text="Loading", bg="blue", fg="white")
 
-
+root.mainloop()
 
 
 
 else:
-    code3 = input ("Willst du dich mit Isi Hacker acc verknüpfen")
-    if code3 == "Yes":
-        code4 = input ("Was ist das Passwort?")
-        if code4 == "899#lol#Hack_90_Isi":
-            def button_click():
-                # Schalte das Laden-Rechteck ein
-                loading_label.place(x=10, y=10)
-                root.update()  # Aktualisiere das Fenster, um die Änderungen sofort anzuzeigen
-                time.sleep(5)  # Warte für 5 Sekunden
-                # Schalte das Laden-Rechteck aus
-                loading_label.place_forget()
+    def button_click():
+    # Schalte das Laden-Rechteck ein
+    loading_label.place(x=10, y=10)
+    root.update()  # Aktualisiere das Fenster, um die Änderungen sofort anzuzeigen
+    time.sleep(5)  # Warte für 5 Sekunden
+    # Schalte das Laden-Rechteck aus
+    loading_label.place_forget()
+    # Erstelle die Leiste nach dem Laden-Bildschirm
+    create_toolbar(root)
 
+# Funktion zum Erstellen der Leiste
+def create_toolbar(parent):
+    toolbar = tk.Frame(parent, bg="lightgray", height=parent.winfo_reqheight()/13)
+    toolbar.pack(side="top", fill="x")
 
-            root = tk.Tk()
-            root.title("Battlenight")
+    # Elemente der Leiste
+    toolbar_elements = ["Battlepass", "Start", "Shop", "Spin", "Battlebucks", "Spind", "Trophäen", "Turnier", "Username"]
+    for element_text in toolbar_elements:
+        element = tk.Label(toolbar, text=element_text, padx=10, pady=5)
+        element.pack(side="left")
 
-            label = tk.Label(root, text="Willkommen im Modpack Isi")
-            label.pack(pady=10)
+root = tk.Tk()
+root.title("Mein GUI")
 
-            button = tk.Button(root, text="Spiel starten!", command=button_click)
-            button.pack()
+label = tk.Label(root, text="Hallo, das ist mein GUI!")
+label.pack(pady=10)
 
-            # Erstellen eines Labels für "Loading"
-            loading_label = tk.Label(root, text="Loading", bg="blue", fg="white")
+button = tk.Button(root, text="Klick mich!", command=button_click)
+button.pack()
 
-            root.mainloop()
+# Erstellen eines Labels für "Loading"
+loading_label = tk.Label(root, text="Loading", bg="blue", fg="white")
+
+root.mainloop()
 
     else:
         def button_click():
-            # Schalte das Laden-Rechteck ein
-            loading_label.place(x=10, y=10)
-            root.update()  # Aktualisiere das Fenster, um die Änderungen sofort anzuzeigen
-            time.sleep(5)  # Warte für 5 Sekunden
-            # Schalte das Laden-Rechteck aus
-            loading_label.place_forget()
-            root = tk.Tk()
-            root.title("Battlenight")
+    # Schalte das Laden-Rechteck ein
+    loading_label.place(x=10, y=10)
+    root.update()  # Aktualisiere das Fenster, um die Änderungen sofort anzuzeigen
+    time.sleep(5)  # Warte für 5 Sekunden
+    # Schalte das Laden-Rechteck aus
+    loading_label.place_forget()
+    # Erstelle die Leiste nach dem Laden-Bildschirm
+    create_toolbar(root)
 
-            label = tk.Label(root, text="Willkommen im Modpack Isi")
-            label.pack(pady=10)
+# Funktion zum Erstellen der Leiste
+def create_toolbar(parent):
+    toolbar = tk.Frame(parent, bg="lightgray", height=parent.winfo_reqheight()/13)
+    toolbar.pack(side="top", fill="x")
 
-            button = tk.Button(root, text="Spiel starten!", command=button_click)
-            button.pack()
+    # Elemente der Leiste
+    toolbar_elements = ["Battlepass", "Start", "Shop", "Spin", "Battlebucks", "Spind", "Trophäen", "Turnier", "Username"]
+    for element_text in toolbar_elements:
+        element = tk.Label(toolbar, text=element_text, padx=10, pady=5)
+        element.pack(side="left")
 
-            # Erstellen eines Labels für "Loading"
-            loading_label = tk.Label(root, text="Loading", bg="blue", fg="white")
+root = tk.Tk()
+root.title("Mein GUI")
 
-            root.mainloop()
+label = tk.Label(root, text="Hallo, das ist mein GUI!")
+label.pack(pady=10)
+
+button = tk.Button(root, text="Klick mich!", command=button_click)
+button.pack()
+
+# Erstellen eines Labels für "Loading"
+loading_label = tk.Label(root, text="Loading", bg="blue", fg="white")
+
+root.mainloop()
+
+
