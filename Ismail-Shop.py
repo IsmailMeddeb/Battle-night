@@ -3,7 +3,7 @@ import time
 
 
 name = input ("Hallo. Wie ist dein Name?")
-print ("Hallo " + name + ". Willkommen zu Battlenight")
+print ("Hallo " + name + ". Willkommen zu Battlenight!")
 code = input("Willst du dich mit Zwacktus Hacker acc. verknüpfen?")
 if code == "Yes":
     code2 = input ("Was ist das Passwort?")
