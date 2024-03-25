@@ -24,6 +24,7 @@ if code == "Yes":
         label.pack(pady=10)
 
         button = tk.Button(root, text="Spiel starten", command=button_click)
+        button.config(font=("Ink Free",50,"bold"))
         button.pack()
 
         # Erstellen eines Labels für "Loading"
