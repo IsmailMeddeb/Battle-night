@@ -4,9 +4,9 @@ import time
 
 name = input ("Hallo. Wie ist dein Name?")
 print ("Hallo " + name + ". Willkommen zu Battlenight")
-code = input("Willst du dich mit Zwacktus Hacker acc. verknüpfen")
+code = input("Willst du dich mit Zwacktus Hacker acc. verknüpfen?")
 if code == "Yes":
-    code2 = input ("Was ist das Passwort")
+    code2 = input ("Was ist das Passwort?")
     if code2 == "899#lol#Hack_90":
         def button_click():
     # Schalte das Laden-Rechteck ein
